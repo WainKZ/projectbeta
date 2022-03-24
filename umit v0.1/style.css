@@ -1,0 +1,351 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+.container {
+width: 180%;
+max-width: 1106px;
+margin: 0 auto;
+}
+/* Header*/
+.header{
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1000;
+}
+
+.nav_container{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_links{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: Manrope;
+    transition: 0.2s linear;
+        background-image: linear-gradient(#228B22, #228B22);
+        background-position: 0% 100%; 
+        background-size: 0% 2px;
+        background-repeat: no-repeat;
+        transition: background-size 0.3s;
+        background-position: 0s 0.3s;
+}
+
+.nav_links:hover{
+    color: #3C3930;
+    transition: all 0.5s ease;
+    background-position: 0% 100%;
+    background-size: 100% 2px;
+}
+
+.nav_menu{
+    text-transform: uppercase;
+}
+
+/* Intro/Main menu*/
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.intro_title{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.intro_inner{
+    width: 100%;
+    max-width: 487px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Button*/
+.btn{
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+
+    margin-top: 50px;
+
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 72px;
+    transition: 0.2s linear;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+
+}
+
+/* Statistics */
+.statistics{
+    background-color: white;
+}
+
+.stats{
+    display: flex;
+}
+
+.stat_column{
+    flex: 1 1;
+
+    padding: 40px 50px;
+    text-align: center;
+
+    border-left: 2px solid #000;
+    color:#000;
+}
+
+.stat_column:last-child{
+    border-right: 2px solid #000;
+}
+
+.stat_number{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+}
+
+.stat_description{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Our students */
+.our_students{
+    padding: 200px 0 0 0;
+    background-color: white;
+}
+
+.our_students_inner{
+    display: flex;
+    max-width: 1103px;
+    justify-content:space-evenly;
+}
+
+.student_block{
+    width: 300px;
+
+    background: #FAFAFA;
+    box-shadow: 0px 4px 30px 2px rgba(0, 0, 0, 0.17);
+    border-radius: 20px;
+}
+
+.student_photo{
+    width: 210px;
+    height: 194px;
+
+    margin-left: 43px;
+    margin-top: 30px;
+
+    border-radius: 20px;
+}
+
+.students_info{
+    
+    text-align: center;
+    padding: 20px 0;
+}
+
+.student_name{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.student_university{
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+
+
+}
+
+/* Courses */
+.courses{
+    padding: 200px 0 0 0;
+}
+
+.course_inner{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.course_block{ 
+    width: 280px;
+    height: 349px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 3.74267px 28.07px 1.87133px rgba(0, 0, 0, 0.17);
+    border-radius: 18.7133px;
+}
+
+.course_block_img{
+    width: 280px;
+    height: 93px;
+}
+
+.course_name{
+    margin-left: 15px;
+    margin-top: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 12px;
+}
+
+.course_lessons_container{
+    margin-top: 25px;
+    margin-left: 23px;
+}
+
+.course_lessons{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.course_lessons{
+    list-style: none;
+}
+
+.course_lessons li::before {
+    content: "• ";
+    color: #228B22;
+  }
+
+.course_time_img{
+    width: 15px;
+    height: 16px;
+}
+
+.course_cost_img{
+    width: 15px;
+    height: 16px;
+}
+
+.course_time_cost{
+    margin-top: 24px;
+
+    display: flex;
+}
+
+.time p{
+    padding-left: 5px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 17px;
+
+    color: #228B22;
+}
+
+.time{
+    display: flex;
+    margin-left: 20px;
+}
+
+.cost p{
+    padding-left: 5px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 17px;
+
+    color: #228B22;
+}
+
+.cost{
+    display: flex;
+    margin-left: 20px;
+}
+
+.course_signup_button{
+
+    margin-left: 10px;
+    margin-top: 34px;
+
+    
+}
+
+.button{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.035px;
+    line-height: 16px;
+
+    text-decoration: none;
+    color: white;
+
+    display: inline-block;
+    vertical-align: top;
+
+    padding: 4px 100px;
+
+    background: #228B22;
+    border-radius: 72px;
+    transition: 0.2s linear;
+}
+
+.button:hover{
+    background-color:white;
+    color: #228B22;
+    outline: 1px solid #228B22;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
